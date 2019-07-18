@@ -18,7 +18,7 @@ var deepest = document.querySelector('#grand-node').firstElementChild
 function deepestChild(node){
   if (deepest.firstElementChild != null){
     deepest = deepest.firstElementChild
+    deepest = deepestChild(deepest)
   }
-  deepest = deepestChild(deepest)
   return deepest
 }
